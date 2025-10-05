@@ -113,7 +113,7 @@ export function LoanHistory() {
                     <span>Repayment Progress</span>
                     <span>{loan.completedMonths}/{loan.tenure} months</span>
                   </div>
-                  <Progress value={(loan.completedMonths / loan.tenure) * 100} className="h-2" />
+                  {/* <Progress value={(loan.completedMonths / loan.tenure) * 100} className="h-2" /> */}
                   <div className="flex justify-between text-sm text-gray-600">
                     <span>Outstanding: ₹{loan.outstandingAmount.toLocaleString()}</span>
                     <span>Next Due: {loan.nextDueDate?.toLocaleDateString()}</span>
@@ -127,7 +127,9 @@ export function LoanHistory() {
                     `Completed: ${loan.completedDate.toLocaleDateString()}` :
                     loan.status === 'rejected' && loan.rejectedDate ?
                     `Rejected: ${loan.rejectedDate.toLocaleDateString()}` :
-                    `Disbursed: ${loan.disbursedDate.toLocaleDateString()}`
+                    loan.disbursedDate ?
+                    `Disbursed: ${loan.disbursedDate.toLocaleDateString()}` :
+                    ''
                   }
                 </span>
               </div>

@@ -205,7 +205,7 @@ export function LoanApprovals() {
                 <div className="bg-blue-50 p-3 rounded-lg">
                   <p className="text-xs text-blue-600 font-medium">Eligibility Score</p>
                   <div className="flex items-center space-x-2 mt-1">
-                    <Progress value={application.eligibilityScore} className="flex-1 h-2" />
+                    {/* <Progress value={application.eligibilityScore} className="flex-1 h-2" /> */}
                     <span className="text-sm font-bold text-blue-800">{application.eligibilityScore}%</span>
                   </div>
                 </div>

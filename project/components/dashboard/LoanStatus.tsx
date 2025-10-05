@@ -39,7 +39,7 @@ export function LoanStatus() {
             <Badge className="bg-green-500">Active</Badge>
           </div>
           
-          <Progress value={progressPercentage} className="h-3" />
+          {/* <Progress value={progressPercentage} className="h-3" /> */}
           
           <div className="flex justify-between text-sm">
             <span className="text-gray-600">Paid: ₹{(loanData.totalAmount - loanData.remainingAmount).toLocaleString()}</span>

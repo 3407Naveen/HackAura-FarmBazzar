@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: farmbazzar-ai
+    runtime: static
+    buildCommand: npm run build
+    staticPublishPath: ./out
+    pullRequestPreviewsEnabled: true
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+    routes:
+      - type: redirect
+        source: /api/(.*)
+        destination: /api/$1
+        status: 200
