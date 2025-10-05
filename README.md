@@ -1,4 +1,5 @@
 HackAura-FarmBazzar🌾
+  
 🌾 Built at HackAura 2025 — Girls Leading Tech's 24hr Global Hackathon
 
 FarmBazzarAI empowers farmers via AI-driven advice, crop monitoring, price prediction, and image-based disease detection. Developed as part of HackAura 2025, where diverse teams built impactful, resume-worthy projects using cutting-edge tech.
