@@ -42,7 +42,7 @@ HackAura is an annual online hackathon from Girls Leading Tech, focused on diver
 
 ---
 
-## 🛠️ Tech Stack  
+## 🛠️ Tech Stack-made with Aptos 
 
 ### Frontend  
 - **Next.js (React)**  
